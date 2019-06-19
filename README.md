@@ -4,7 +4,7 @@
 - [Truffle](https://github.com/trufflesuite/truffle)
 - [Ganache](http://truffleframework.com/ganache/)
 
-## Instalacion
+## Instalación
 ```
 npm install -g truffle
 git clone https://github.com/jimi82/truffle_Dapp_workshop.git
