@@ -36,8 +36,9 @@ contract Voting {
      * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
     // Función que me permite añadir a un cadidato.
+    // Recibe como parámetros el nombre del candidato y el partido
     // Solo el propietario del contrato podrá añadir al candidato
-    function addCandidate(bytes32 name, bytes32 party) public onlyOwner
+    function addCandidate(... , ...) public ...
     {
         // ID del candidato: Número de candidato añadido al mapping (clave)
         /* AQUÍ TU CÓDIGO */
@@ -48,28 +49,31 @@ contract Voting {
     }
 
     // Función que me permite a un votante votar por un candidato
-    function vote(bytes32 uid, uint candidateID) public {
+    // recobe como parámetros el identificador del votante y el candidato al que vota.
+    function vote(... , ... ) public {
         // Verificamos si el candidato al que voy a votar existe y creamos un nuevo votante
         /* AQUÍ TU CÓDIGO */
     }
 
     // Función que deveulve el número de votos de un candidato específico
-    function totalVotes(uint candidateID) public view  returns (uint) {
+    // Recibe como parámetro el identificador del candidato
+    function totalVotes(...) public ...  returns (...) {
         /* AQUÍ TU CÓDIGO */
     }
 
     // Función que devuelve el núemero de candidatos
-    function getNumOfCandidates() public view returns(uint) {
+    function getNumOfCandidates() public ... returns (...) {
         /* AQUÍ TU CÓDIGO */
     }
 
     // Función que devuelve el núemero de votantes
-    function getNumOfVoters() public view returns(uint) {
+    function getNumOfVoters() public ... returns (...) {
         /* AQUÍ TU CÓDIGO */
     }
 
     // Función que devuelve la información de un candidato concreto
-    function getCandidate(uint candidateID) public view returns (uint,bytes32, bytes32) {
+    // Recibe como parámetro el identificador de un candidato
+    function getCandidate(...) public view returns (..., ..., ...) {
         /* AQUÍ TU CÓDIGO */
     }
 }
